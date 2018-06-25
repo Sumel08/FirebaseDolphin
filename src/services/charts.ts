@@ -30,7 +30,7 @@ export class ChartsService {
           'bullet': 'round',
           'id': 'temperature',
           'title': 'Temperature',
-          'valueField': 'temperature'
+          'valueField': 'value'
         }
       ],
       'guides': [],
