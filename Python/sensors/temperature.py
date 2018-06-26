@@ -22,9 +22,11 @@ def new_temperature(date, value):
         }
     }
 
-    url = "https://firestore.googleapis.com/v1beta1/projects/example-dba5e/databases/%28default%29/documents/temp/" + str(int(date.timestamp()))
+    url = "https://firestore.googleapis.com/v1beta1/projects/example-dba5e/databases/%28default%29/documents/temperatura/" + str(int(date.timestamp()))
     payload = json.dumps(data)
+    print(payload)
     response = requests.request("PATCH", url, data=payload)
+    print(response)
 
 for x in range(10):
     time.sleep(1);

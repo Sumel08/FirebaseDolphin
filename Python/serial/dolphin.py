@@ -60,6 +60,7 @@ class Example(QWidget):
         data = data.decode('UTF-8')
         try:
             data = json.loads(data)
+            print(data)
             date = datetime.datetime.now()
             self.new_temperature(date, data.get('temperature'))
             self.new_humidity(date, data.get('humidity'))
